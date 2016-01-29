@@ -41,4 +41,4 @@ integrations:
     - integrationName: ship-slack
       type: slack
       recipients:
-        - public-chnl
+        - "#public-chnl"
