@@ -11,7 +11,7 @@ env:
 
   matrix:
     - M1=ONE
-  #  - M2=TWO
+    - M2=TWO
 
 build:
   pre_ci:
@@ -40,10 +40,10 @@ integrations:
   notifications:
     - integrationName: ship-slack
       type: slack
-      recipients
+      recipients:
         - "#public-chnl"
       branches:
         - master
-     # on_start: always
+      on_start: always
       on_success: always
       on_failure: always
